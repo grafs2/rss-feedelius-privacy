@@ -61,7 +61,7 @@
   <body>
     <main>
       <h1>Privacy Policy for RSS-Feedelius</h1>
-      <p class="meta">Last updated: October 1, 2026 · <a href="#de">Deutsche Version weiter unten</a></p>
+      <p class="meta">Last updated: October 4, 2026 · <a href="#de">Deutsche Version weiter unten</a></p>
 
       <p>
         RSS-Feedelius is a Google Chrome extension for reading RSS and Atom feeds. This policy explains which data the
@@ -77,10 +77,11 @@
       <h2>Data stored locally</h2>
       <p>The following is stored in your browser's local extension storage (<code>chrome.storage.local</code>):</p>
       <ul>
-        <li>the feeds you add (address and name),</li>
+        <li>the feeds you add (address and name) and the groups you sort them into,</li>
         <li>the articles loaded from those feeds (up to 200 per feed) and their read status,</li>
         <li>articles you saved as favorites,</li>
-        <li>display settings such as column widths, filter and text size.</li>
+        <li>keyword rules you enter (words to highlight or mute),</li>
+        <li>settings such as column widths, filter, text size, list layout and refresh interval.</li>
       </ul>
       <p>
         This data never leaves your browser and is not transmitted to the developer or any third party. It is not
@@ -93,6 +94,10 @@
           RSS-Feedelius only requests the feed addresses you add yourself, without cookies or credentials. As with any
           web request, the respective server can see your IP address.
         </li>
+        <li>
+          Unless you choose “Manual only” in the settings, these feeds are also refreshed in the background at the
+          interval you set (15, 30 or 60 minutes) while Chrome is running, even when the reader tab is closed.
+        </li>
         <li>Images inside articles are loaded directly from the original websites when an article is displayed.</li>
         <li>Website icons (favicons) come from Chrome's own cache.</li>
       </ul>
@@ -101,6 +106,11 @@
       <ul>
         <li><strong>storage, unlimitedStorage:</strong> local storage of feeds, articles, favorites and settings.</li>
         <li><strong>favicon:</strong> showing website icons in the feed list.</li>
+        <li><strong>alarms:</strong> scheduling the background refresh and updating the unread count on the toolbar icon.</li>
+        <li>
+          <strong>offscreen:</strong> an invisible page that reads (parses) the downloaded feeds during the background
+          refresh.
+        </li>
         <li>
           <strong>Site access (optional):</strong> requested per feed website only when you add a feed from that
           website, and used solely to load the feed.
@@ -119,7 +129,7 @@
 
       <section class="lang" id="de" lang="de">
         <h1>Datenschutzerklärung für RSS-Feedelius</h1>
-        <p class="meta">Stand: 1. Oktober 2026</p>
+        <p class="meta">Stand: 4. Oktober 2026</p>
 
         <p>
           RSS-Feedelius ist eine Browser-Erweiterung für Google Chrome zum Lesen von RSS- und Atom-Feeds. Diese Erklärung
@@ -135,10 +145,11 @@
         <h2>Welche Daten lokal gespeichert werden</h2>
         <p>Im lokalen Speicher deines Browsers (<code>chrome.storage.local</code>) werden abgelegt:</p>
         <ul>
-          <li>die Liste der Feeds, die du hinzugefügt hast (Adresse und Name),</li>
+          <li>die Liste der Feeds, die du hinzugefügt hast (Adresse und Name), und die Gruppen, in die du sie einteilst,</li>
           <li>die geladenen Artikel dieser Feeds (bis zu 200 pro Feed) und ihr Gelesen-Status,</li>
           <li>Artikel, die du als Favoriten markiert hast,</li>
-          <li>Anzeige-Einstellungen wie Spaltenbreiten, Filter und Schriftgrösse.</li>
+          <li>Stichwort-Regeln, die du eingibst (Wörter zum Hervorheben oder Abdunkeln),</li>
+          <li>Einstellungen wie Spaltenbreiten, Filter, Schriftgrösse, Listenansicht und Aktualisierungsintervall.</li>
         </ul>
         <p>
           Diese Daten verlassen deinen Browser nicht und werden weder an den Entwickler noch an Dritte übermittelt. Sie
@@ -155,6 +166,10 @@
             Bilder in Artikeln werden beim Anzeigen direkt von den Servern der jeweiligen Website geladen, so wie beim
             Besuch der Website selbst.
           </li>
+          <li>
+            Ausser bei der Einstellung „Manual only“ werden diese Feeds im eingestellten Intervall (15, 30 oder 60 Minuten)
+            auch im Hintergrund aktualisiert, solange Chrome läuft – auch wenn der Reader-Tab geschlossen ist.
+          </li>
           <li>Website-Symbole (Favicons) stammen aus dem Zwischenspeicher von Chrome.</li>
         </ul>
 
@@ -162,6 +177,11 @@
         <ul>
           <li><strong>storage, unlimitedStorage:</strong> lokale Speicherung von Feeds, Artikeln, Favoriten und Einstellungen.</li>
           <li><strong>favicon:</strong> Anzeige der Website-Symbole in der Feedliste.</li>
+          <li><strong>alarms:</strong> Zeitsteuerung der Hintergrund-Aktualisierung und der Ungelesen-Zahl am Symbol in der Symbolleiste.</li>
+          <li>
+            <strong>offscreen:</strong> eine unsichtbare Seite, die während der Hintergrund-Aktualisierung die geladenen
+            Feeds ausliest.
+          </li>
           <li>
             <strong>Zugriff auf Websites (optional):</strong> wird für jede Feed-Website einzeln erst dann angefragt, wenn
             du einen Feed dieser Website hinzufügst. Er wird nur zum Laden des Feeds verwendet.
