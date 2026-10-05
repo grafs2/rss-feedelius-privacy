@@ -61,7 +61,7 @@
   <body>
     <main>
       <h1>Privacy Policy for Feedelius RSS Reader</h1>
-      <p class="meta">Last updated: October 6, 2026 (Coffee button, adjustable article limit) · <a href="#de">Deutsche Version weiter unten</a></p>
+      <p class="meta">Last updated: October 6, 2026 (sync across devices, Coffee button, adjustable article limit) · <a href="#de">Deutsche Version weiter unten</a></p>
 
       <p>
         Feedelius is a Google Chrome extension for reading RSS and Atom feeds. This policy explains which data the
@@ -71,7 +71,8 @@
       <h2>Summary</h2>
       <p>
         Feedelius does not collect any personal data. There are no user accounts, no analytics or tracking
-        services and no developer servers. All data stays in your browser.
+        services and no developer servers. All data stays in your browser – except that, unless you switch it
+        off, your feed list and settings are synced to your other computers through Chrome Sync (see below).
       </p>
 
       <h2>Data stored locally</h2>
@@ -84,8 +85,23 @@
         <li>settings such as column widths, filter, text size, list layout and refresh interval.</li>
       </ul>
       <p>
-        This data never leaves your browser and is not transmitted to the developer or any third party. It is not
-        synced through your Google account.
+        This data is not transmitted to the developer or any third party.
+      </p>
+
+      <h2>Sync across devices (Chrome Sync)</h2>
+      <p>
+        So that your feeds are the same on all your computers, Feedelius stores a copy of the following in Chrome's
+        sync storage (<code>chrome.storage.sync</code>): your feed list (address, name, group), groups, keyword rules,
+        favorites as links (title, address, source, date – without the article text) and the settings for refresh
+        interval, articles per feed, text size and list layout. Chrome transfers this through your Google account to
+        your other computers where you are signed in to Chrome and Feedelius is installed, under
+        <a href="https://policies.google.com/privacy">Google's privacy policy</a> and your Chrome sync settings. If
+        you are not signed in or Chrome Sync is off, it stays on this computer.
+      </p>
+      <p>
+        Articles, read status, column widths and the website access you granted are not synced. The developer has no
+        access to the synced data. Sync is on by default and can be switched off at any time in the Feedelius settings
+        (gear icon → Sync across devices).
       </p>
 
       <h2>Network requests</h2>
@@ -133,7 +149,7 @@
 
       <section class="lang" id="de" lang="de">
         <h1>Datenschutzerklärung für Feedelius RSS Reader</h1>
-        <p class="meta">Stand: 6. Oktober 2026 (Coffee-Button, einstellbare Artikelzahl)</p>
+        <p class="meta">Stand: 6. Oktober 2026 (Sync zwischen Geräten, Coffee-Button, einstellbare Artikelzahl)</p>
 
         <p>
           Feedelius ist eine Browser-Erweiterung für Google Chrome zum Lesen von RSS- und Atom-Feeds. Diese Erklärung
@@ -143,7 +159,9 @@
         <h2>Kurzfassung</h2>
         <p>
           Feedelius sammelt keine personenbezogenen Daten. Es gibt keine Benutzerkonten, keine Analyse- oder
-          Tracking-Dienste und keine Server des Entwicklers. Alle Daten bleiben in deinem Browser.
+          Tracking-Dienste und keine Server des Entwicklers. Alle Daten bleiben in deinem Browser – ausser dass deine
+          Feedliste und Einstellungen über Chrome Sync auf deine anderen Computer übertragen werden, sofern du das nicht
+          abschaltest (siehe unten).
         </p>
 
         <h2>Welche Daten lokal gespeichert werden</h2>
@@ -156,8 +174,24 @@
           <li>Einstellungen wie Spaltenbreiten, Filter, Schriftgrösse, Listenansicht und Aktualisierungsintervall.</li>
         </ul>
         <p>
-          Diese Daten verlassen deinen Browser nicht und werden weder an den Entwickler noch an Dritte übermittelt. Sie
-          werden auch nicht über dein Google-Konto synchronisiert.
+          Diese Daten werden weder an den Entwickler noch an Dritte übermittelt.
+        </p>
+
+        <h2>Synchronisation zwischen Geräten (Chrome Sync)</h2>
+        <p>
+          Damit deine Feeds auf allen deinen Computern gleich sind, legt Feedelius eine Kopie folgender Daten im
+          Sync-Speicher von Chrome ab (<code>chrome.storage.sync</code>): deine Feedliste (Adresse, Name, Gruppe), Gruppen,
+          Stichwort-Regeln, Favoriten als Links (Titel, Adresse, Quelle, Datum – ohne Artikeltext) und die Einstellungen
+          für Aktualisierungsintervall, Artikel pro Feed, Schriftgrösse und Listenansicht. Chrome überträgt diese Daten
+          über dein Google-Konto auf deine anderen Computer, auf denen du in Chrome angemeldet bist und Feedelius
+          installiert hast – gemäss der <a href="https://policies.google.com/privacy?hl=de">Datenschutzerklärung von Google</a>
+          und deinen Sync-Einstellungen in Chrome. Bist du nicht angemeldet oder ist Chrome Sync aus, bleiben sie auf
+          diesem Computer.
+        </p>
+        <p>
+          Artikel, Gelesen-Status, Spaltenbreiten und erteilte Website-Zugriffe werden nicht synchronisiert. Der
+          Entwickler hat keinen Zugriff auf die synchronisierten Daten. Sync ist standardmässig eingeschaltet und lässt
+          sich jederzeit in den Einstellungen von Feedelius abschalten (Zahnrad → Sync across devices).
         </p>
 
         <h2>Netzwerkzugriffe</h2>
