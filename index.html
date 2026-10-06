@@ -61,7 +61,7 @@
   <body>
     <main>
       <h1>Privacy Policy for Feedelius RSS Reader</h1>
-      <p class="meta">Last updated: October 6, 2026 (sync across devices, Coffee button, adjustable article limit) · <a href="#de">Deutsche Version weiter unten</a></p>
+      <p class="meta">Last updated: October 7, 2026 (full text, right-click subscribe, starter packs, sync across devices, Coffee button, adjustable article limit) · <a href="#de">Deutsche Version weiter unten</a></p>
 
       <p>
         Feedelius is a Google Chrome extension for reading RSS and Atom feeds. This policy explains which data the
@@ -115,6 +115,11 @@
           interval you set (15, 30 or 60 minutes) while Chrome is running, even when the reader tab is closed.
         </li>
         <li>Images inside articles are loaded directly from the original websites when an article is displayed.</li>
+        <li>
+          When you click <strong>Full text</strong> on an article, Feedelius loads that article's page from its website
+          (without cookies) to show the complete text. The text is kept in memory only while the Feedelius tab is open
+          and is not stored.
+        </li>
         <li>Website icons (favicons) come from Chrome's own cache.</li>
         <li>
           The <strong>Coffee</strong> button opens the developer's support page in a new tab, and only when you click
@@ -132,8 +137,13 @@
           refresh.
         </li>
         <li>
-          <strong>Site access (optional):</strong> requested per feed website only when you add a feed from that
-          website, and used solely to load the feed.
+          <strong>contextMenus:</strong> the entries “Subscribe in Feedelius” and “Subscribe to link in Feedelius” when you
+          right-click a web page or link. Only when you choose one is the address of that page or link handed to the
+          Add feed dialog; pages are never read otherwise.
+        </li>
+        <li>
+          <strong>Site access (optional):</strong> requested per website only when you add a feed from it (or a starter
+          pack) or click Full text on one of its articles, and used solely to load that feed or article page.
         </li>
       </ul>
 
@@ -149,7 +159,7 @@
 
       <section class="lang" id="de" lang="de">
         <h1>Datenschutzerklärung für Feedelius RSS Reader</h1>
-        <p class="meta">Stand: 6. Oktober 2026 (Sync zwischen Geräten, Coffee-Button, einstellbare Artikelzahl)</p>
+        <p class="meta">Stand: 7. Oktober 2026 (Volltext, Abonnieren per Rechtsklick, Starterpakete, Sync zwischen Geräten, Coffee-Button, einstellbare Artikelzahl)</p>
 
         <p>
           Feedelius ist eine Browser-Erweiterung für Google Chrome zum Lesen von RSS- und Atom-Feeds. Diese Erklärung
@@ -205,6 +215,11 @@
             Besuch der Website selbst.
           </li>
           <li>
+            Klickst du bei einem Artikel auf <strong>Full text</strong>, lädt Feedelius die Seite dieses Artikels von der
+            Website (ohne Cookies), um den vollständigen Text anzuzeigen. Der Text liegt nur im Arbeitsspeicher, solange
+            der Feedelius-Tab offen ist, und wird nicht gespeichert.
+          </li>
+          <li>
             Ausser bei der Einstellung „Manual only“ werden diese Feeds im eingestellten Intervall (15, 30 oder 60 Minuten)
             auch im Hintergrund aktualisiert, solange Chrome läuft – auch wenn der Reader-Tab geschlossen ist.
           </li>
@@ -226,8 +241,14 @@
             Feeds ausliest.
           </li>
           <li>
-            <strong>Zugriff auf Websites (optional):</strong> wird für jede Feed-Website einzeln erst dann angefragt, wenn
-            du einen Feed dieser Website hinzufügst. Er wird nur zum Laden des Feeds verwendet.
+            <strong>contextMenus:</strong> die Einträge „Subscribe in Feedelius“ und „Subscribe to link in Feedelius“ beim
+            Rechtsklick auf eine Webseite oder einen Link. Nur wenn du einen davon wählst, wird die Adresse dieser Seite
+            bzw. dieses Links an den Dialog „Add feed“ übergeben; sonst werden keine Seiten gelesen.
+          </li>
+          <li>
+            <strong>Zugriff auf Websites (optional):</strong> wird für jede Website einzeln erst dann angefragt, wenn du einen
+            Feed dieser Website (oder ein Starterpaket) hinzufügst oder bei einem ihrer Artikel auf Full text klickst. Er wird
+            nur zum Laden dieses Feeds bzw. dieser Artikelseite verwendet.
           </li>
         </ul>
 
